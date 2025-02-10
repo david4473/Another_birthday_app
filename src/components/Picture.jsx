@@ -19,8 +19,6 @@ function Picture() {
   };
   const allImagesLoaded = loadedImages === images.length;
 
-  console.log(images);
-
   return (
     <SectionWrapper>
       {allImagesLoaded && (
