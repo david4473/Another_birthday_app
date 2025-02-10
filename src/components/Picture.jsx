@@ -24,13 +24,15 @@ function Picture() {
       {allImagesLoaded && (
         <Link to="/card">
           <p className="absolute text-4xl font-bold text-customBlue inset-0 flex justify-center items-center text-center transform rotate-6 cursor-pointer">
-            You&apos;re Getting Old! :P
+            You&apos;re Getting Old! 😋
           </p>
         </Link>
       )}
       {!allImagesLoaded && (
         <div className="absolute inset-0 flex justify-center items-center">
-          <p className="text-xl font-medium text-gray-500">Loading images...</p>
+          <p className="text-xl font-medium text-gray-500">
+            Hold on, I&apos;m cooking...
+          </p>
         </div>
       )}
       {images.map((image, index) => (
