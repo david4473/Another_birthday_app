@@ -49,7 +49,7 @@ function Cake() {
 
       if (averageLowFrequency > blowThreshold) {
         if (!blowStartTime) {
-          blowStartTime = 50;
+          blowStartTime = 80;
         } else if (performance.now() - blowStartTime > requiredDuration) {
           setCandlesBlownOut(true);
         }
